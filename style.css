@@ -16,9 +16,9 @@
 }
 
 @keyframes pulse {
-    0%   { box-shadow: 0 0 15px rgba(0, 115, 230, 0.7); }
-    50%  { box-shadow: 0 0 25px rgba(0, 132, 255, 1); }
-    100% { box-shadow: 0 0 15px rgba(0, 115, 230, 0.7); }
+    0%   { box-shadow: 0 0 15px rgba(255, 199, 0, 0.7); } 
+    50%  { box-shadow: 0 0 25px rgba(255, 215, 0, 1); }  
+    100% { box-shadow: 0 0 15px rgba(255, 199, 0, 0.7); }
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     align-items: center;
     min-height: 95vh;
     
-    background: linear-gradient(-45deg, #0b1118, #121212, #0d1a2b, #121212);
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #1a1a1a); 
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
@@ -70,7 +70,7 @@ p    { animation-delay: 0.3s; }
 h1 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #FFC72C; 
     margin-bottom: 10px;
 }
 
@@ -78,6 +78,7 @@ p {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 30px;
+    color: #f0f0f0;
 }
 
 .links a {
@@ -102,8 +103,8 @@ p {
 }
 
 .link-primary {
-    background-color: #0073e6; 
-    color: #ffffff;
+    background-color: #FFC72C; 
+    color: #000000; 
     
     animation-name: slideUp, pulse;
     animation-delay: 0.5s, 1.5s; 
@@ -113,20 +114,20 @@ p {
 }
 
 .link-primary:hover {
-    background-color: #0084ff;
+    background-color: #FFD700;
     transform: translateY(-2px);
     
-    box-shadow: 0 0 15px rgba(0, 115, 230, 0.7);
+    box-shadow: 0 0 15px rgba(255, 199, 0, 0.7);
 }
 
 .link-secondary {
-    background-color: #2a2a2a; 
+    background-color: #1a1a1a;
     color: #f0f0f0;
-    border: 1px solid #444; 
+    border: 1px solid #333;
 }
 .link-secondary:hover {
-    background-color: #3a3a3a;
-    border-color: #777;
+    background-color: #2a2a2a;
+    border-color: #555;
     transform: translateY(-2px);
     
     box-shadow: 0 0 15px rgba(240, 240, 240, 0.2);
